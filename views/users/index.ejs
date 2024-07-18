@@ -6,11 +6,13 @@
     <title>Users</title>
 </head>
 <body>
-    <h1>Hellow World</h1>
+    <h1>Hello World!!</h1>
     <ul>
         <% users.forEach((user) => { %>
         <li>
-          <%= user.username %>
+          <a href="/users/<%= user._id %>"
+          ><%= user.username %>
+        </a>
         </li>
     <% }); %>
     </ul>
